@@ -44,10 +44,10 @@ class CalculatorVirtualCapability(AbstractVirtualCapability, ABC):
         if operation == "+":
             result = self.a + self.b
         elif operation == "-":
-            result = self.a + self.b
+            result = self.a - self.b
         elif operation == "*":
             result = self.a * self.b
-        elif operation == "\\":
+        elif operation == "/":
             if self.b == 0:
                 return self._error("Cannot divide by 0!")
             result = self.a / self.b
