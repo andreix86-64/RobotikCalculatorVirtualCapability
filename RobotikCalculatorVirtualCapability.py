@@ -52,6 +52,9 @@ class CalculatorVirtualCapability(AbstractVirtualCapability, ABC):
 
         return self._result(result)
 
+    def loop(self):
+        pass
+
 
 if __name__ == "__main__":
     try:
