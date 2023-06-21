@@ -21,9 +21,11 @@ class CalculatorVirtualCapability(AbstractVirtualCapability, ABC):
 
     def andrei_set_a(self, args: dict):
         self.a = args["AndreiA"]
+        return {}
 
     def andrei_set_b(self, args: dict):
         self.b = args["AndreiB"]
+        return {}
 
     def andrei_perform_operation(self, args) -> dict:
         operation = args["AndreiOperation"]
